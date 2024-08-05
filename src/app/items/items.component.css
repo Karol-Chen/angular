@@ -1,0 +1,39 @@
+/* Styles for the heading */
+h1 {
+    text-align: center;
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+
+/* General table styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapses the border to avoid double borders */
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling table headers */
+th {
+    background-color: #f2f2f2;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Styling table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Adds a border to each table cell */
+    text-align: left;
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #e9e9e9;
+}

@@ -1,0 +1,19 @@
+<h1>Edit Items</h1>
+<button [routerLink]="'/items'">Home</button>
+<form [formGroup]="editForm" (ngSubmit)="handleEdition()">
+    <label>id: </label>
+    <input formControlName="id">
+    <br>
+    <label>name: </label>
+    <input formControlName="name">
+    <br>
+    <label>price: </label>
+    <input formControlName="price">
+    <br>
+    <label>quantity: </label>
+    <input formControlName="quantity">
+    <br>
+    <label>category: </label>
+    <input formControlName="category">
+    <button type="submit" >submit</button>
+</form>

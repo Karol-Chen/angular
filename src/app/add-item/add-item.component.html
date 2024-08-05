@@ -1,0 +1,44 @@
+<form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+    <div>
+      <label for="id">ID</label>
+      <input id="id" formControlName="id">
+      <div *ngIf="addForm.get('id')?.invalid && addForm.get('id')?.touched" style="color: red ">
+        ID is required.
+      </div>
+    </div>
+  
+    <div>
+      <label for="name">Name</label>
+      <input id="name" formControlName="name">
+      <div *ngIf="addForm.get('name')?.invalid && addForm.get('name')?.touched" style="color: red ">
+        Name is required.
+        Name must be at least 3 characters long.
+      </div>
+    </div>
+  
+    <div>
+      <label for="price">Price</label>
+      <input id="price" formControlName="price">
+      <div *ngIf="addForm.get('price')?.invalid && addForm.get('price')?.touched" style="color: red ">
+        Price is required.
+      </div>
+    </div>
+  
+    <div>
+      <label for="quantity">Quantity</label>
+      <input id="quantity" formControlName="quantity">
+      <div *ngIf="addForm.get('quantity')?.invalid && addForm.get('quantity')?.touched" style="color: red">
+        Quantity is required.
+      </div>
+    </div>
+  
+    <div>
+      <label for="category">Category</label>
+      <input id="category" formControlName="category">
+      <div *ngIf="addForm.get('category')?.invalid && addForm.get('category')?.touched" style="color: red">
+        Category is required.
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="addForm.invalid">Add Item</button>
+  </form>
